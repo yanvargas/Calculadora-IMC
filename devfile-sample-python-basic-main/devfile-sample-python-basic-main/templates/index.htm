@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <title>Teste</title>
+</head>
+<body>
+    <div class="div-tabela">
+      <table class="Tabela">
+        <tr>
+          <th>IMC</th>
+          <th>CLASSIFICAÇÃO</th>
+          <th>GRAU DE OBESIDADE</th>
+        </tr>
+        <tr>
+          <td>MENOR QUE 18.5</td>
+          <td>MAGREZA</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>ENTRE 25.0 E 29.9</td>
+          <td>SOBREPESO</td>
+          <td>I</td>
+        </tr>
+        <tr>
+          <td>ENTRE 30.0 E 39.9</td>
+          <td>OBESIDADE</td>
+          <td>II</td>
+        </tr>
+        <tr>
+          <td>MAIOR QUE 40.0</td>
+          <td>OBESIDADE GRAVE</td>
+          <td>III</td>
+        </tr>
+      </table>
+    </div>
+  <div class="principal">
+    <form class="form" action ="/" method="POST">
+      <strong id="peso">Peso (KG)</strong>
+         <input class="inputs1" type="text" name="massa"><br>
+      <strong>Altura (CM)</strong>
+         <input class="inputs2" type="text" name="altura"><br>
+        <div class="butao">
+           <button class="btn btn-danger" type="submit" value="submit">Calcular</button>
+        </div>
+    </form>
+    {% if imc %}
+    <p class="resultado">O seu IMC = {{imc}}</p>
+    {% endif %}
+  </div>
+</body>
+</html>

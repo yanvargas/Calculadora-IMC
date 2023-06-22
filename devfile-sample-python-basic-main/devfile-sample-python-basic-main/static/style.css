@@ -1,0 +1,48 @@
+*{padding: 0px; margin: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
+body {
+  background-image: url('gym_dumbbells_inventory_219519_1920x1080.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.principal {
+  margin-left: 635px;
+  margin-top: 50px;
+}
+
+.form{
+  color: white;
+  font-size: 20px;
+}
+
+.butao {
+  margin-top: 15px;
+  margin-left: 200px;
+}
+.inputs1{
+  margin-bottom: 10px;
+}
+
+.resultado {
+  color: white;
+  margin-left: 60px;
+  margin-top: 20px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.Tabela {
+  color: white;
+  text-align: center;
+}
+
+#peso {
+  margin-left: 16px;
+}
+
+.div-tabela{
+  margin-left: 600px;
+  margin-top: 280px;
+}
